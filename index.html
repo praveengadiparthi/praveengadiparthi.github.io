@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praveen Gadiparthi | Cloud & DevOps Engineer</title>
+    <meta name="description" content="Cloud & DevOps Engineer with 6+ years of experience in AWS, Azure, Kubernetes, Terraform, and CI/CD. AWS Certified Solutions Architect based in Raleigh, NC.">
+    <meta name="keywords" content="Cloud Engineer, DevOps, AWS, Azure, Kubernetes, Terraform, Praveen Gadiparthi">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ========== NAVIGATION ========== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo" aria-label="Praveen Gadiparthi Home">PG</a>
+            <ul class="nav-links" id="nav-links" role="list">
+                <li><a href="#home"           class="nav-link active">Home</a></li>
+                <li><a href="#about"          class="nav-link">About</a></li>
+                <li><a href="#skills"         class="nav-link">Skills</a></li>
+                <li><a href="#experience"     class="nav-link">Experience</a></li>
+                <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                <li><a href="#contact"        class="nav-link">Contact</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ========== HERO ========== -->
+    <section id="home" class="hero">
+        <!-- Animated background orbs -->
+        <div class="hero-bg" aria-hidden="true">
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
+            <div class="orb orb-3"></div>
+            <div class="dot-grid"></div>
+        </div>
+
+        <!-- Freely flying tech icons across hero -->
+        <div class="hero-floating-icons" aria-hidden="true">
+            <div class="tech-icon tech-icon-aws"       title="Amazon Web Services"><i class="fab fa-aws"></i></div>
+            <div class="tech-icon tech-icon-azure"     title="Microsoft Azure">
+                <svg viewBox="0 0 96 96" width="44" height="44" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="azL" x1="42.8" y1="12.7" x2="15.8" y2="92.6" gradientUnits="userSpaceOnUse">
+                            <stop offset="0" stop-color="#114a8b"/>
+                            <stop offset="1" stop-color="#0669bc"/>
+                        </linearGradient>
+                        <linearGradient id="azR" x1="47.8" y1="10.4" x2="77.5" y2="89.4" gradientUnits="userSpaceOnUse">
+                            <stop offset="0" stop-color="#3ccbf4"/>
+                            <stop offset="1" stop-color="#2892df"/>
+                        </linearGradient>
+                    </defs>
+                    <path fill="url(#azL)" d="M33.338 6.544h26.038l-27.03 80.087a4.152 4.152 0 01-3.933 2.824H8.149a4.145 4.145 0 01-3.928-5.47L29.404 9.368a4.152 4.152 0 013.934-2.824z"/>
+                    <path fill="#0078d4"   d="M71.175 60.261H29.404a1.911 1.911 0 00-1.305 3.309l26.976 25.195a4.17 4.17 0 002.846 1.12h23.767z"/>
+                    <path fill="url(#azR)" d="M66.595 9.364a4.145 4.145 0 00-3.928-2.82H33.648a4.146 4.146 0 013.928 2.82l25.184 74.62a4.146 4.146 0 01-3.928 5.472h29.02a4.146 4.146 0 003.927-5.472z"/>
+                </svg>
+            </div>
+            <div class="tech-icon tech-icon-docker"    title="Docker"><i class="fab fa-docker"></i></div>
+            <div class="tech-icon tech-icon-k8s"       title="Kubernetes"><i class="fas fa-dharmachakra"></i></div>
+            <div class="tech-icon tech-icon-terraform" title="Terraform"><i class="fas fa-cubes"></i></div>
+            <div class="tech-icon tech-icon-python"    title="Python"><i class="fab fa-python"></i></div>
+            <div class="tech-icon tech-icon-github"    title="GitHub Actions"><i class="fab fa-github"></i></div>
+            <div class="tech-icon tech-icon-linux"     title="Linux"><i class="fab fa-linux"></i></div>
+        </div>
+
+        <div class="hero-container">
+            <!-- Left: Text -->
+            <div class="hero-content">
+                <span class="hero-greeting">Hello, I'm</span>
+                <h1 class="hero-name">Praveen <span class="gradient-text">Gadiparthi</span></h1>
+                <h2 class="hero-title">
+                    <span id="typing-text"></span><span class="cursor" aria-hidden="true">|</span>
+                </h2>
+                <p class="hero-description">
+                    Cloud &amp; DevOps Engineer with <strong>6+ years</strong> of experience designing, deploying,
+                    and automating secure, scalable cloud architectures across AWS and Azure.
+                    Specialized in Kubernetes, Terraform, CI/CD pipelines, and GenAI workloads.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">
+                        <i class="fas fa-paper-plane" aria-hidden="true"></i> Get In Touch
+                    </a>
+                    <a href="Praveen_Gadiparthi.pdf" class="btn btn-outline" download aria-label="Download Resume PDF">
+                        <i class="fas fa-download" aria-hidden="true"></i> Download Resume
+                    </a>
+                </div>
+                <div class="hero-socials">
+                    <a href="mailto:praveengadiparthi007@gmail.com" class="social-icon" aria-label="Send Email">
+                        <i class="fas fa-envelope" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/praveen-gadiparthi" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn Profile">
+                        <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://github.com/praveengadiparthi-max" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub Profile">
+                        <i class="fab fa-github" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right: Photo with ring + floating icons -->
+            <div class="hero-photo-wrapper">
+                <div class="photo-ring-container">
+                    <div class="photo-ring-border" aria-hidden="true"></div>
+                    <div class="photo-content" id="photo-content">
+                        <div class="photo-placeholder" id="photo-placeholder">PG</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Scroll indicator -->
+        <div class="hero-scroll">
+            <a href="#about" class="scroll-indicator" aria-label="Scroll to About section">
+                <i class="fas fa-chevron-down" aria-hidden="true"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- ========== ABOUT ========== -->
+    <section id="about" class="about section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+                <p class="section-subtitle">Cloud architect &amp; DevOps specialist passionate about automation and scale</p>
+            </div>
+
+            <p class="about-lead fade-in">
+                I'm a Cloud &amp; DevOps Engineer with over 6 years of hands-on experience architecting and automating
+                enterprise-grade cloud infrastructures across AWS and Azure. From designing multi-account Landing Zones
+                and hybrid networking solutions to deploying GenAI workloads on Amazon Bedrock and orchestrating
+                containerized microservices on EKS/AKS — I bring a full-stack cloud perspective to every challenge.
+                I hold multiple industry certifications and thrive at the intersection of infrastructure, automation, and reliability.
+            </p>
+
+            <div class="about-highlights">
+                <div class="highlight-box fade-in">
+                    <div class="highlight-icon">
+                        <i class="fas fa-cloud" aria-hidden="true"></i>
+                    </div>
+                    <h3>Multi-Cloud Expertise</h3>
+                    <p>Architecting secure, highly available infrastructures across AWS and Azure with governance, Landing Zones, Transit Gateway, ExpressRoute, and cost optimization at enterprise scale.</p>
+                </div>
+                <div class="highlight-box fade-in">
+                    <div class="highlight-icon">
+                        <i class="fas fa-robot" aria-hidden="true"></i>
+                    </div>
+                    <h3>GenAI &amp; ML Workloads</h3>
+                    <p>Implementing and governing GenAI pipelines using Amazon Bedrock, SageMaker, and Azure OpenAI with secure RBAC-based access controls, private networking, and responsible AI guardrails.</p>
+                </div>
+                <div class="highlight-box fade-in">
+                    <div class="highlight-icon">
+                        <i class="fas fa-code-branch" aria-hidden="true"></i>
+                    </div>
+                    <h3>Infrastructure as Code</h3>
+                    <p>Building reusable, modular Terraform architectures with Enterprise governance, Sentinel policy-as-code enforcement, and full CI/CD integration across Dev, QA, UAT, and Prod environments.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SKILLS ========== -->
+    <section id="skills" class="skills section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Technical <span class="gradient-text">Skills</span></h2>
+                <p class="section-subtitle">A comprehensive toolkit for modern cloud engineering</p>
+            </div>
+
+            <div class="skills-grid">
+
+                <!-- Cloud Platforms -->
+                <div class="skill-card fade-in">
+                    <div class="skill-header">
+                        <div class="skill-icon icon-aws"><i class="fab fa-aws" aria-hidden="true"></i></div>
+                        <h3>Cloud Platforms</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="tag">AWS EC2</span>
+                        <span class="tag">AWS S3</span>
+                        <span class="tag">AWS VPC</span>
+                        <span class="tag">AWS IAM</span>
+                        <span class="tag">AWS Lambda</span>
+                        <span class="tag">AWS EKS</span>
+                        <span class="tag">AWS ECS</span>
+                        <span class="tag">API Gateway</span>
+                        <span class="tag">AWS Route 53</span>
+                        <span class="tag">CloudWatch</span>
+                        <span class="tag">Amazon Bedrock</span>
+                        <span class="tag">Azure VMs</span>
+                        <span class="tag">Azure AKS</span>
+                        <span class="tag">Azure Functions</span>
+                        <span class="tag">Azure Monitor</span>
+                        <span class="tag">Azure OpenAI</span>
+                    </div>
+                </div>
+
+                <!-- CI/CD & DevOps -->
+                <div class="skill-card fade-in">
+                    <div class="skill-header">
+                        <div class="skill-icon icon-cicd"><i class="fas fa-infinity" aria-hidden="true"></i></div>
+                        <h3>CI/CD &amp; DevOps</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="tag">GitHub Actions</span>
+                        <span class="tag">Jenkins</span>
+                        <span class="tag">Azure DevOps</span>
+                        <span class="tag">AWS CodePipeline</span>
+                        <span class="tag">AWS CodeBuild</span>
+                        <span class="tag">AWS CodeDeploy</span>
+                        <span class="tag">YAML Pipelines</span>
+                        <span class="tag">Blue-Green Deploy</span>
+                        <span class="tag">Canary Deploy</span>
+                        <span class="tag">SonarQube</span>
+                        <span class="tag">Maven</span>
+                        <span class="tag">Ant</span>
+                        <span class="tag">Groovy Scripts</span>
+                        <span class="tag">Git Branching</span>
+                        <span class="tag">Route53 Weighted</span>
+                        <span class="tag">Azure Traffic Mgr</span>
+                    </div>
+                </div>
+
+                <!-- Infrastructure as Code -->
+                <div class="skill-card fade-in">
+                    <div class="skill-header">
+                        <div class="skill-icon icon-iac"><i class="fas fa-cubes" aria-hidden="true"></i></div>
+                        <h3>Infrastructure as Code</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="tag">Terraform</span>
+                        <span class="tag">Terraform Enterprise</span>
+                        <span class="tag">Sentinel Policies</span>
+                        <span class="tag">Remote State (S3)</span>
+                        <span class="tag">AWS CloudFormation</span>
+                        <span class="tag">Azure ARM Templates</span>
+                        <span class="tag">Bicep</span>
+                        <span class="tag">Ansible</span>
+                        <span class="tag">Reusable Modules</span>
+                        <span class="tag">Multi-Env Provisioning</span>
+                        <span class="tag">RBAC Workspaces</span>
+                    </div>
+                </div>
+
+                <!-- Containers & Orchestration -->
+                <div class="skill-card fade-in">
+                    <div class="skill-header">
+                        <div class="skill-icon icon-docker"><i class="fab fa-docker" aria-hidden="true"></i></div>
+                        <h3>Containers &amp; Orchestration</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="tag">Docker</span>
+                        <span class="tag">Kubernetes</span>
+                        <span class="tag">Amazon EKS</span>
+                        <span class="tag">Azure AKS</span>
+                        <span class="tag">AWS ECS</span>
+                        <span class="tag">Helm Charts</span>
+                        <span class="tag">ECR</span>
+                        <span class="tag">ACR</span>
+                        <span class="tag">Auto-Scaling</span>
+                        <span class="tag">Rolling Updates</span>
+                        <span class="tag">Network Policies</span>
+                        <span class="tag">Pod Security Standards</span>
+                        <span class="tag">Admission Controllers</span>
+                    </div>
+                </div>
+
+                <!-- Monitoring & Observability -->
+                <div class="skill-card fade-in">
+                    <div class="skill-header">
+                        <div class="skill-icon icon-monitor"><i class="fas fa-chart-line" aria-hidden="true"></i></div>
+                        <h3>Monitoring &amp; Observability</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="tag">Amazon CloudWatch</span>
+                        <span class="tag">AWS CloudTrail</span>
+                        <span class="tag">AWS Config</span>
+                        <span class="tag">AWS X-Ray</span>
+                        <span class="tag">Azure Monitor</span>
+                        <span class="tag">Log Analytics</span>
+                        <span class="tag">Application Insights</span>
+                        <span class="tag">Prometheus</span>
+                        <span class="tag">Grafana</span>
+                        <span class="tag">Splunk</span>
+                        <span class="tag">Dynatrace</span>
+                        <span class="tag">OpenSearch (ELK)</span>
+                    </div>
+                </div>
+
+                <!-- Security & Identity -->
+                <div class="skill-card fade-in">
+                    <div class="skill-header">
+                        <div class="skill-icon icon-security"><i class="fas fa-shield-alt" aria-hidden="true"></i></div>
+                        <h3>Security &amp; Identity</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="tag">AWS IAM</span>
+                        <span class="tag">IAM Identity Center</span>
+                        <span class="tag">Azure AD (Entra ID)</span>
+                        <span class="tag">Managed Identities</span>
+                        <span class="tag">RBAC</span>
+                        <span class="tag">Conditional Access</span>
+                        <span class="tag">Secrets Manager</span>
+                        <span class="tag">SSM Parameter Store</span>
+                        <span class="tag">Azure Key Vault</span>
+                        <span class="tag">AWS KMS</span>
+                        <span class="tag">AWS WAF</span>
+                        <span class="tag">NACLs</span>
+                        <span class="tag">Security Groups</span>
+                        <span class="tag">Trivy Scanning</span>
+                    </div>
+                </div>
+
+                <!-- Networking -->
+                <div class="skill-card fade-in">
+                    <div class="skill-header">
+                        <div class="skill-icon icon-network"><i class="fas fa-network-wired" aria-hidden="true"></i></div>
+                        <h3>Networking</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="tag">AWS VPC</span>
+                        <span class="tag">Transit Gateway</span>
+                        <span class="tag">VPC Peering</span>
+                        <span class="tag">Direct Connect</span>
+                        <span class="tag">AWS PrivateLink</span>
+                        <span class="tag">Site-to-Site VPN</span>
+                        <span class="tag">NAT / Internet GW</span>
+                        <span class="tag">Route Tables</span>
+                        <span class="tag">Azure VNet</span>
+                        <span class="tag">ExpressRoute</span>
+                        <span class="tag">Private Endpoints</span>
+                        <span class="tag">Azure Firewall</span>
+                        <span class="tag">NSGs</span>
+                    </div>
+                </div>
+
+                <!-- Automation & Scripting -->
+                <div class="skill-card fade-in">
+                    <div class="skill-header">
+                        <div class="skill-icon icon-python"><i class="fab fa-python" aria-hidden="true"></i></div>
+                        <h3>Automation &amp; Scripting</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Boto3</span>
+                        <span class="tag">Azure SDK</span>
+                        <span class="tag">Bash</span>
+                        <span class="tag">PowerShell</span>
+                        <span class="tag">Shell Scripting</span>
+                        <span class="tag">Lambda Functions</span>
+                        <span class="tag">Azure Functions</span>
+                        <span class="tag">Step Functions</span>
+                        <span class="tag">AWS Glue</span>
+                        <span class="tag">IAM Automation</span>
+                        <span class="tag">Cost Reporting</span>
+                        <span class="tag">Compliance Scripts</span>
+                    </div>
+                </div>
+
+            </div><!-- /skills-grid -->
+        </div>
+    </section>
+
+    <!-- ========== EXPERIENCE ========== -->
+    <section id="experience" class="experience section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Work <span class="gradient-text">Experience</span></h2>
+                <p class="section-subtitle">6+ years of cloud engineering excellence across government, enterprise &amp; industry</p>
+            </div>
+
+            <div class="timeline">
+
+                <!-- Job 1: Current -->
+                <div class="timeline-item fade-in">
+                    <div class="timeline-marker" aria-hidden="true">
+                        <div class="marker-dot"></div>
+                        <div class="marker-pulse"></div>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <div class="timeline-title-group">
+                                <h3 class="job-title">Cloud &amp; DevOps Engineer</h3>
+                                <p class="company-name">
+                                    <i class="fas fa-building" aria-hidden="true"></i>
+                                    Krasan Consulting Services INC &bull; State of Illinois (DCFS)
+                                </p>
+                            </div>
+                            <div class="timeline-meta">
+                                <span class="job-badge current-badge"><i class="fas fa-circle"></i> Current</span>
+                                <span class="job-date"><i class="fas fa-calendar-alt" aria-hidden="true"></i> 08/2024 – Present</span>
+                                <span class="job-location"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Remote &bull; Raleigh, NC</span>
+                            </div>
+                        </div>
+                        <ul class="job-achievements">
+                            <li>Designed and configured Amazon VPCs with public/private subnets, route tables, NAT/Internet Gateways, and Site-to-Site VPN for secure government hybrid cloud connectivity</li>
+                            <li>Built reusable Terraform modules for VPCs, EKS clusters, IAM roles, RDS, S3, and Secrets Manager to standardize deployments across Dev/QA/UAT/Prod environments</li>
+                            <li>Automated CI/CD pipelines using GitHub Actions integrated with Maven and SonarQube quality gates; implemented Blue/Green and Canary deployments with zero-downtime releases</li>
+                            <li>Deployed GenAI/ML pipelines using Amazon SageMaker, Bedrock, and Lambda — integrating model training, fine-tuning, and endpoint provisioning into CI/CD workflows</li>
+                            <li>Configured CloudWatch, Prometheus, Grafana, X-Ray, and OpenSearch (ELK) for centralized monitoring, distributed tracing, and full-stack observability of AWS workloads</li>
+                        </ul>
+                        <div class="tech-badges">
+                            <span class="tech-badge">AWS</span>
+                            <span class="tech-badge">Terraform</span>
+                            <span class="tech-badge">EKS</span>
+                            <span class="tech-badge">Lambda</span>
+                            <span class="tech-badge">Bedrock</span>
+                            <span class="tech-badge">SageMaker</span>
+                            <span class="tech-badge">GitHub Actions</span>
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">Grafana</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Job 2 -->
+                <div class="timeline-item fade-in">
+                    <div class="timeline-marker" aria-hidden="true">
+                        <div class="marker-dot"></div>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <div class="timeline-title-group">
+                                <h3 class="job-title">DevOps Engineer</h3>
+                                <p class="company-name">
+                                    <i class="fas fa-building" aria-hidden="true"></i>
+                                    Sahasra / WeDoClever LLC &bull; Comcast
+                                </p>
+                            </div>
+                            <div class="timeline-meta">
+                                <span class="job-date"><i class="fas fa-calendar-alt" aria-hidden="true"></i> 07/2023 – 08/2024</span>
+                                <span class="job-location"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Hybrid &bull; Philadelphia, PA</span>
+                            </div>
+                        </div>
+                        <ul class="job-achievements">
+                            <li>Managed and resolved AWS and Azure infrastructure tickets, ensuring timely and accurate issue resolution with 99.9% SLA compliance across multi-cloud environments</li>
+                            <li>Built reusable Terraform modules for EKS/AKS clusters, IAM/Role Assignments, RDS/Azure SQL, and Key Vault with Enterprise workspace governance and Sentinel policy enforcement</li>
+                            <li>Automated containerized deployments using GitHub Actions and Jenkins, deploying Docker workloads across ECS/EKS and AKS/App Services with Helm charts for multi-environment customization</li>
+                            <li>Developed Python-based Lambda and Azure Functions to automate VM operations, identity audits, model retraining triggers, security scanning, and compliance validation</li>
+                            <li>Implemented centralized observability using CloudWatch, Azure Monitor, Log Analytics, Prometheus, Grafana, and Splunk with proactive alerting and anomaly detection dashboards</li>
+                        </ul>
+                        <div class="tech-badges">
+                            <span class="tech-badge">AWS</span>
+                            <span class="tech-badge">Azure</span>
+                            <span class="tech-badge">Terraform</span>
+                            <span class="tech-badge">Kubernetes</span>
+                            <span class="tech-badge">Jenkins</span>
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">Ansible</span>
+                            <span class="tech-badge">Helm</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Job 3 -->
+                <div class="timeline-item fade-in">
+                    <div class="timeline-marker" aria-hidden="true">
+                        <div class="marker-dot"></div>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <div class="timeline-title-group">
+                                <h3 class="job-title">Student Assistant (Cloud Operations)</h3>
+                                <p class="company-name">
+                                    <i class="fas fa-university" aria-hidden="true"></i>
+                                    University of North Texas
+                                </p>
+                            </div>
+                            <div class="timeline-meta">
+                                <span class="job-date"><i class="fas fa-calendar-alt" aria-hidden="true"></i> 01/2022 – 05/2023</span>
+                                <span class="job-location"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Denton, TX</span>
+                            </div>
+                        </div>
+                        <ul class="job-achievements">
+                            <li>Managed and resolved AWS service tickets, ensuring timely issue resolution across EC2, S3, RDS, Lambda, and VPC resources for university cloud infrastructure</li>
+                            <li>Designed and developed self-service AWS workflows using Lambda, API Gateway, and Step Functions to automate resource provisioning, approvals, and request tracking</li>
+                            <li>Automated repetitive cloud operations using Python scripts and Lambda functions, reducing manual effort significantly in resource provisioning and compliance checks</li>
+                            <li>Integrated Terraform and CloudFormation templates for standardized, repeatable deployments of VPCs, EC2 instances, RDS databases, and EKS clusters</li>
+                        </ul>
+                        <div class="tech-badges">
+                            <span class="tech-badge">AWS</span>
+                            <span class="tech-badge">Lambda</span>
+                            <span class="tech-badge">Step Functions</span>
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">Terraform</span>
+                            <span class="tech-badge">CloudFormation</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Job 4 -->
+                <div class="timeline-item fade-in">
+                    <div class="timeline-marker" aria-hidden="true">
+                        <div class="marker-dot"></div>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <div class="timeline-title-group">
+                                <h3 class="job-title">Cloud Engineer</h3>
+                                <p class="company-name">
+                                    <i class="fas fa-industry" aria-hidden="true"></i>
+                                    Amara Raja Batteries Ltd
+                                </p>
+                            </div>
+                            <div class="timeline-meta">
+                                <span class="job-date"><i class="fas fa-calendar-alt" aria-hidden="true"></i> 07/2019 – 11/2021</span>
+                                <span class="job-location"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Tirupati, India</span>
+                            </div>
+                        </div>
+                        <ul class="job-achievements">
+                            <li>Designed and implemented an Industrial IoT data pipeline to collect real-time telemetry (temperature, vibration, pressure) from factory equipment using Azure IoT Hub and edge sensors</li>
+                            <li>Built Infrastructure as Code using Terraform to provision Azure resources including VNets, AKS clusters, Storage Accounts, and Compute instances across Dev, QA, and Prod</li>
+                            <li>Developed containerized microservices using Docker on Azure Kubernetes Service (AKS) to process streaming device data and run anomaly detection services</li>
+                            <li>Created CI/CD pipelines using GitHub Actions to automate infrastructure provisioning, container image builds, testing, and deployment of IoT data processing services</li>
+                            <li>Implemented predictive maintenance using machine condition monitoring algorithms and Azure Stream Analytics, with Grafana dashboards for real-time telemetry visualization</li>
+                        </ul>
+                        <div class="tech-badges">
+                            <span class="tech-badge">Azure</span>
+                            <span class="tech-badge">IoT Hub</span>
+                            <span class="tech-badge">AKS</span>
+                            <span class="tech-badge">Terraform</span>
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">Docker</span>
+                            <span class="tech-badge">Grafana</span>
+                            <span class="tech-badge">Stream Analytics</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div><!-- /timeline -->
+        </div>
+    </section>
+
+    <!-- ========== CERTIFICATIONS ========== -->
+    <section id="certifications" class="certifications section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Certifi<span class="gradient-text">cations</span></h2>
+                <p class="section-subtitle">Industry-recognized credentials validating cloud expertise</p>
+            </div>
+
+            <div class="cert-grid">
+
+                <a href="https://www.credly.com/badges/484659a2-29ae-4f97-8212-f6e83510dbed/public_url" target="_blank" rel="noopener noreferrer" class="cert-card fade-in">
+                    <div class="cert-glow cert-glow-aws"></div>
+                    <div class="cert-icon cert-icon-aws">
+                        <i class="fab fa-aws" aria-hidden="true"></i>
+                    </div>
+                    <h3>AWS Certified Solutions Architect</h3>
+                    <p class="cert-level">Associate</p>
+                    <p class="cert-issuer">Amazon Web Services</p>
+                    <div class="cert-badge">
+                        <i class="fas fa-certificate" aria-hidden="true"></i> Verify &rarr;
+                    </div>
+                </a>
+
+                <a href="https://www.credly.com/badges/20a4664c-60cd-467f-aae8-8570fa8bcbe7/public_url" target="_blank" rel="noopener noreferrer" class="cert-card fade-in">
+                    <div class="cert-glow cert-glow-k8s"></div>
+                    <div class="cert-icon cert-icon-k8s">
+                        <i class="fas fa-dharmachakra" aria-hidden="true"></i>
+                    </div>
+                    <h3>Certified Kubernetes Administrator</h3>
+                    <p class="cert-level">CKA</p>
+                    <p class="cert-issuer">Cloud Native Computing Foundation</p>
+                    <div class="cert-badge">
+                        <i class="fas fa-certificate" aria-hidden="true"></i> Verify &rarr;
+                    </div>
+                </a>
+
+                <a href="https://www.credly.com/badges/a9e9f827-95ac-4c2b-b181-d9e5b1fbc3d9/public_url" target="_blank" rel="noopener noreferrer" class="cert-card fade-in">
+                    <div class="cert-glow cert-glow-tf"></div>
+                    <div class="cert-icon cert-icon-tf">
+                        <i class="fas fa-cubes" aria-hidden="true"></i>
+                    </div>
+                    <h3>HashiCorp Certified: Terraform Associate</h3>
+                    <p class="cert-level">HCTA0-004</p>
+                    <p class="cert-issuer">HashiCorp</p>
+                    <div class="cert-badge">
+                        <i class="fas fa-certificate" aria-hidden="true"></i> Verify &rarr;
+                    </div>
+                </a>
+
+                <a href="https://www.credly.com/badges/00e4fbb3-1a3e-4e9c-b910-ccf7b33d5fee/linked_in_profile" target="_blank" rel="noopener noreferrer" class="cert-card fade-in">
+                    <div class="cert-glow cert-glow-safe"></div>
+                    <div class="cert-icon cert-icon-safe">
+                        <i class="fas fa-award" aria-hidden="true"></i>
+                    </div>
+                    <h3>Certified SAFe&reg; 6 Practitioner</h3>
+                    <p class="cert-level">SP</p>
+                    <p class="cert-issuer">Scaled Agile, Inc.</p>
+                    <div class="cert-badge">
+                        <i class="fas fa-certificate" aria-hidden="true"></i> Verify &rarr;
+                    </div>
+                </a>
+
+            </div><!-- /cert-grid -->
+        </div>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+                <p class="section-subtitle">Let's connect and build something amazing together</p>
+            </div>
+
+            <div class="contact-grid">
+
+                <!-- Left: Info -->
+                <div class="contact-info fade-in">
+                    <h3>Let's Talk</h3>
+                    <p>
+                        I'm always open to discussing new cloud opportunities, architecture challenges,
+                        or just connecting with fellow tech enthusiasts. Feel free to reach out!
+                    </p>
+
+                    <div class="contact-cards">
+                        <a href="mailto:praveengadiparthi007@gmail.com" class="contact-card">
+                            <div class="contact-card-icon">
+                                <i class="fas fa-envelope" aria-hidden="true"></i>
+                            </div>
+                            <div class="contact-card-info">
+                                <h4>Email</h4>
+                                <p>praveengadiparthi007@gmail.com</p>
+                            </div>
+                        </a>
+                        <a href="tel:+19402996707" class="contact-card">
+                            <div class="contact-card-icon">
+                                <i class="fas fa-phone" aria-hidden="true"></i>
+                            </div>
+                            <div class="contact-card-info">
+                                <h4>Phone</h4>
+                                <p>+1 (940) 299-6707</p>
+                            </div>
+                        </a>
+                        <div class="contact-card">
+                            <div class="contact-card-icon">
+                                <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                            </div>
+                            <div class="contact-card-info">
+                                <h4>Location</h4>
+                                <p>Cary, NC, USA</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-socials">
+                        <a href="https://www.linkedin.com/in/praveen-gadiparthi" target="_blank" rel="noopener noreferrer" class="social-link linkedin">
+                            <i class="fab fa-linkedin-in" aria-hidden="true"></i> LinkedIn
+                        </a>
+                        <a href="https://github.com/praveengadiparthi-max" target="_blank" rel="noopener noreferrer" class="social-link github-link">
+                            <i class="fab fa-github" aria-hidden="true"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right: Form -->
+                <div class="contact-form-wrapper fade-in">
+                    <form class="contact-form" id="contact-form" novalidate>
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" placeholder="John Doe" required autocomplete="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" placeholder="john@example.com" required autocomplete="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="Job Opportunity / Cloud Consultation">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" placeholder="Tell me about your project or opportunity..." rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full" id="submit-btn">
+                            <i class="fas fa-paper-plane" aria-hidden="true"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+
+            </div><!-- /contact-grid -->
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="gradient-text">PG</span>
+                    <p>Cloud &amp; DevOps Engineer</p>
+                </div>
+                <div class="footer-socials">
+                    <a href="mailto:praveengadiparthi007@gmail.com" class="social-icon" aria-label="Email">
+                        <i class="fas fa-envelope" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/praveen-gadiparthi" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://github.com/praveengadiparthi-max" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub">
+                        <i class="fab fa-github" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> Praveen Gadiparthi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cursor particle canvas -->
+    <canvas id="cursor-canvas" aria-hidden="true"></canvas>
+
+    <script src="script.js"></script>
+</body>
+</html>
