@@ -1264,6 +1264,68 @@ button { cursor: pointer; font-family: var(--font-main); }
 }
 
 /* ============================================================
+   Responsive — 1440px  (horizontal icon row on smaller screens)
+   ============================================================ */
+@media (max-width: 1440px) {
+    /* Centred horizontal row at the bottom, split either side
+       of the scroll arrow with a gap in the middle           */
+    .hero-floating-icons {
+        top: auto;
+        bottom: 2rem;
+        left: 50%;
+        right: auto;
+        width: auto;
+        transform: translateX(-50%);
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        gap: 16px;
+        overflow: visible;
+        pointer-events: auto;
+    }
+
+    /* Switch each icon from absolute to relative so it joins
+       the flex row instead of flying to its CSS position     */
+    .hero-floating-icons .tech-icon {
+        position: relative;
+        top: auto;
+        left: auto;
+        right: auto;
+        bottom: auto;
+        width: 46px;
+        height: 46px;
+        font-size: 1.2rem;
+    }
+
+    /* Extra gap after the 4th icon — leaves space for the
+       scroll arrow (46 px wide) with 20 px breathing room   */
+    .hero-floating-icons .tech-icon:nth-child(4) {
+        margin-right: 80px;
+    }
+
+    /* Gentle staggered bob animation for horizontal row */
+    .tech-icon-aws       { animation: floatH 2.5s ease-in-out infinite 0s;   }
+    .tech-icon-linux     { animation: floatH 2.5s ease-in-out infinite 0.2s; }
+    .tech-icon-azure     { animation: floatH 2.5s ease-in-out infinite 0.4s; }
+    .tech-icon-python    { animation: floatH 2.5s ease-in-out infinite 0.6s; }
+    .tech-icon-github    { animation: floatH 2.5s ease-in-out infinite 0.8s; }
+    .tech-icon-terraform { animation: floatH 2.5s ease-in-out infinite 1.0s; }
+    .tech-icon-k8s       { animation: floatH 2.5s ease-in-out infinite 1.2s; }
+    .tech-icon-docker    { animation: floatH 2.5s ease-in-out infinite 1.4s; }
+}
+
+@keyframes floatH {
+    0%, 100% { transform: translateY(0)    rotate(0deg);  }
+    50%      { transform: translateY(-7px) rotate(4deg);  }
+}
+
+/* Hide icon row on very small phones — too cramped */
+@media (max-width: 480px) {
+    .hero-floating-icons { display: none; }
+}
+
+/* ============================================================
    Responsive — 968px
    ============================================================ */
 @media (max-width: 968px) {
