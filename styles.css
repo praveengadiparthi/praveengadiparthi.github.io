@@ -4,8 +4,8 @@
 :root {
     --primary-start:  #667eea;
     --primary-end:    #764ba2;
-    --accent-start:   #f093fb;
-    --accent-end:     #fa709a;
+    --accent-start:   #f7971e;
+    --accent-end:     #ffd200;
     --bg-dark:        #0f0f23;
     --bg-dark-2:      #1a1a2e;
     --bg-dark-3:      #16213e;
@@ -958,7 +958,7 @@ button { cursor: pointer; font-family: var(--font-main); }
 }
 .tech-badge {
     background: rgba(240,147,251,0.08);
-    border: 1px solid rgba(240,147,251,0.2);
+    border: 1px solid rgba(247,151,30,0.2);
     color: var(--accent-start);
     padding: 0.22rem 0.75rem;
     border-radius: 8px;
@@ -1060,7 +1060,7 @@ button { cursor: pointer; font-family: var(--font-main); }
     align-items: center;
     gap: 0.4rem;
     background: rgba(240,147,251,0.1);
-    border: 1px solid rgba(240,147,251,0.25);
+    border: 1px solid rgba(247,151,30,0.25);
     color: var(--accent-start);
     padding: 0.35rem 1.1rem;
     border-radius: 50px;
